@@ -1,0 +1,243 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navigation Menu */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#logo img {
+    height: 105px;
+    width: 105px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: rgba(255, 255, 255, 0.116);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 44px;
+    margin: 1px;
+    border-radius: 21px;
+    color: black;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgba(63, 23, 2, 0.723);
+}
+
+#home {
+    margin-left: 10px;
+}
+
+#basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 180px;
+    height: 720px;
+    background-color: rgb(63 23 2 / 42%);
+}
+
+#basic::before {
+    content: "";
+    position: absolute;
+    background: url('../food_img/pexels-chan-walrus-958545.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.95;
+}
+
+#basic h1 {
+    color: white;
+    text-shadow: 2px 2px #3f1702;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+#basic p {
+    color: white;
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin-top: 10px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+    margin-top: 7px;
+}
+
+#services .box {
+    border: 2px solid rgb(104, 23, 7);
+    padding: 16px;
+    margin: 16px;
+    background-color: #8e5a1dd9;
+    color: white;
+    box-shadow: 0px 0px 5px 6px #120d00;
+    border-radius: 20px;
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#services p {
+    text-align: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#client-section {
+    /* height: 355px; */
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 18px;
+}
+
+#clients img {
+    height: 100px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../food_img/pexels-paul-h-17198886.jpg') no-repeat center center/cover;
+    height: 48%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#client-section h1{
+    color: white;
+    text-shadow: 2px 2px 12px #040000;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    background: url('../food_img/pexels-isabella-mendes-338713.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* font-size: 15px; */
+    border: 2px solid black;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 800;
+}
+
+footer{
+    color: white;
+    background-color: #0000008a;
+    padding: 7px 20px;
+}
+
+/* Utility Classes */
+.heading {
+    font-size: 3.3rem;
+    padding: 45px;
+}
+
+.heading1 {
+    font-size: 2.3rem;
+    padding: 45px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.btn {
+    margin-top: 48px;
+    padding: 5px 15px;
+    font-size: 20px;
+    border: #931d1df0;
+    background-color: #3f1702;
+    color: white;
+    box-shadow: 0px 0px 12px #ffffffa6;
+    border-radius: 49px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ------------- */
+
+.btn:hover {
+    background-color: #160801;
+    cursor: pointer;
+}
